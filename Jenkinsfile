@@ -34,7 +34,7 @@ pipeline {
 	    {
 	     mail bcc: '',
  	     body: "Hi Srini,pl discuss",
-  	     subject: 'Seating arrangement', to: 'srinivasan.babu@hindujatech.com'
+  	     subject: 'Seating arrangement', to: 'srinivasan.babu@hindujatech.com,raghavi.n@ashokleyland.com'
 	    }
 	    
 	}
