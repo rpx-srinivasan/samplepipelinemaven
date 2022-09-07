@@ -33,7 +33,7 @@ pipeline {
 	    always
 	    {
 	     mail bcc: '',
- 	     body: "test",
+ 	     body: "testing",
   	     subject: 'summary', to: 'srinivasan.babu@hindujatech.com,raghavi.n@ashokleyland.com'
 	    }
 	    
