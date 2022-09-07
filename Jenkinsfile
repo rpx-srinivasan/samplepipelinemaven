@@ -24,8 +24,7 @@ pipeline {
             steps
 			{
                 echo 'Deploying Application....'
-		mail bcc: '', body: 'Test', cc: '', from: '', replyTo: '', subject: 'Test', to: 'raghavi.n@ashokleyland.com'
-            }
+		       }
         }
         
 	}
@@ -33,7 +32,9 @@ pipeline {
 	{
 	    always
 	    {
-	     emailext body: 'Body', subject: 'Test', to: 'raghavi.n@ashokleyland.com'   
+	     mail bcc: '',
+ 	     body: "Hello All,\nBelow points are deployed on UAT ${params.DeploymentMode}, please check and share the status to Development Team. \nDeployed Points:${params.Notes}",
+  	     from: 'jenkins@ashokleyland.com', subject: 'ServiceMandi QA Released Points', to: 'prasanna.kumar@ashokleyland.com,HTL_Jayaprakash2@ashokleyland.com'
 	    }
 	    
 	}
