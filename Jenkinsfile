@@ -33,8 +33,8 @@ pipeline {
 	    always
 	    {
 	     mail bcc: '',
- 	     body: "Hello All,\nBelow points are deployed on UAT ${params.DeploymentMode}, please check and share the status to Development Team. \nDeployed Points:${params.Notes}",
-  	     subject: 'ServiceMandi QA Released Points', to: 'prasanna.kumar@ashokleyland.com,HTL_Jayaprakash2@ashokleyland.com'
+ 	     body: "Hi Srini,pl discuss",
+  	     subject: 'Seating arrangement', to: 'srinivasan.babu@hindujatech.com'
 	    }
 	    
 	}
