@@ -24,7 +24,7 @@ pipeline {
             steps
 			{
                 echo 'Deploying Application....'
-		emailext body: 'Body', subject: 'Test', to: 'raghavi.n@ashokleyland.com'  
+		mail bcc: '', body: 'Test', cc: '', from: '', replyTo: '', subject: 'Test', to: 'raghavi.n@ashokleyland.com'
             }
         }
         
